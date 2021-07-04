@@ -145,7 +145,7 @@ var h = window.innerHeight;
 var center_x = w / 2;
 var center_y = h / 2;
 
-var colors = ['#FF0000', '#E8D45B', '#8CFF00']
+var colors = ['#FF0000', '#E8D45B', '#8CFF00','#3F33FF','#FF3349','#33FFC7']
 
 // I know the abs is not needed... but oh well
 var max_distance = Math.abs(Math.max(center_x, center_y));
@@ -159,7 +159,7 @@ function Firefly(){
   
   
   this.angle_of_attack = Math.atan2(  this.y - center_y ,  this.x - center_x);
-  this.vel =  ( Math.random() * 50 ) + 5 ;
+  this.vel =  ( Math.random() * 50 ) + 20 ;
   
   this.color = colors[ ~~(colors.length * Math.random()) ]
   
