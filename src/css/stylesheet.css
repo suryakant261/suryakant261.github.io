@@ -113,16 +113,16 @@ body {
 }
 
 .peach-disco {
-	-webkit-animation:peach_disc linear 3s infinite;
-	-moz-animation:peach_disc linear 3s infinite;
-	-o-animation:peach_disc linear 3s infinite;
-	-ms-animation:peach_disc linear 3s infinite;
-	animation:peach_disc linear 3s infinite;
+	-webkit-animation:peach_disc linear 6s infinite;
+	-moz-animation:peach_disc linear 6s infinite;
+	-o-animation:peach_disc linear 6s infinite;
+	-ms-animation:peach_disc linear 6s infinite;
+	animation:peach_disc linear 6s infinite;
 }
 
 @-webkit-keyframes peach_disc {
 	0%{
-		background-color: #0FC0FC;
+		background-color: #000000;
 	}
 	25%{
 		background-color: #7B1DAF;
@@ -139,7 +139,7 @@ body {
 }
 @-moz-keyframes peach_disc {
 	0%{
-		background-color: #0FC0FC;
+		background-color: #000000;
 	}
 	25%{
 		background-color: #7B1DAF;
@@ -157,7 +157,7 @@ body {
 
 @-o-keyframes peach_disc {
 	0%{
-		background-color: #0FC0FC;
+		background-color: #000000;
 	}
 	25%{
 		background-color: #7B1DAF;
@@ -175,7 +175,7 @@ body {
 
 @-ms-keyframes peach_disc {
 	0%{
-		background-color: #0FC0FC;
+		background-color: #000000;
 	}
 	25%{
 		background-color: #7B1DAF;
@@ -193,7 +193,7 @@ body {
 
 @keyframes peach_disc {
 	0%{
-		background-color: #0FC0FC;
+		background-color: #000000;
 	}
 	25%{
 		background-color: #7B1DAF;
@@ -1283,6 +1283,9 @@ body {
 	background-image: url('../../images/ballons/b6.png');
 }
 #b7,#b77{
+	background-image: url('../../images/ballons/b7.png');
+}
+#b8,#b88{
 	background-image: url('../../images/ballons/b7.png');
 }
 .balloons-rotate-behaviour-one {
