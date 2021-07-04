@@ -259,11 +259,11 @@ $('document').ready(function(){
 	});
 	
 	$('#story').click(function(){
-		var audio1 = $('.song1')[0];
-        audio1.pause();
+		// var audio1 = $('.song1')[0];
+  //       audio1.pause();
 
-        var audio2 = $('.song')[0];
-        audio2.play();
+  //       var audio2 = $('.song')[0];
+  //       audio2.play();
 		$(this).fadeOut('slow');
 		$('#card').css("display", "block");
 		$('#card').show();
