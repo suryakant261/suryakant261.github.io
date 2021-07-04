@@ -8,7 +8,7 @@ URL: http://suryakant261.github.io/
 Technology Used: Javascript, CSS3, HTML5
 
 
-## Normally through browser
+## Open Normally through browser
 Open index.html in browser and navigate
 
 
