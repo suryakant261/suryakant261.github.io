@@ -1,4 +1,33 @@
-<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300' rel='stylesheet' type='text/css'>
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
+
+<head>
+  <title>Happy Birthday Savita</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Happy Birthday Savita">
+  <link rel="icon" href="../../images/others/favicon.ico" type="image/x-icon" />
+    <meta property="og:description" content="Wish you a very Happy Birthday">
+      <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
+  <link rel="stylesheet/less" href="src/css/cake.less">
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300' rel='stylesheet' type='text/css'>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+</head>
 <style>
 
 .inline-blocks > .block{
@@ -86,6 +115,12 @@ body{
 }
 </style>
 
+<div>
+<audio id = "hbd" class="song" controls autoplay loop>
+        <source src="../../audio/hbd.mp3" type="audio/mpeg"></source>
+     Your browser isn't invited for super fun audio time.
+    </audio>
+</div>
 <div class="cover super-centered-container">
   <canvas id="can">Get a browser</canvas>  
   <div class="overlay-static" >    
@@ -100,7 +135,7 @@ body{
     <h1 class="bday">Happy Birthday <a target="_self" rel="noopener noreferrer" href="../../index.html"> Savita</a></h1>
   </div>
 </div>
-
+</html>
 
 <script>
 
@@ -177,6 +212,8 @@ var alive_fireflies = 0;
 var last_emit = 0;
 
 function render(){
+  var audio = document.getElementById("hbd");
+  audio.play();
   now = Date.now();
   dt = (last - now) / 1000; 
   last = now;
@@ -199,7 +236,6 @@ function render(){
   
   requestAnimationFrame(render);
 }
-
 
 render();
 
